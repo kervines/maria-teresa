@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+ 
+:root{
+--color-1:#916B2D;
+--color-2:#9D7D49;
+--color-3:#F6A502;
+--color-4:#FFDE59;
+--color-5:#F7EFE2;
+--color-6:#FFFEFA;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +21,7 @@
 body{
   padding: 1rem;
   font-family: "Poppins", sans-serif;
-
+  color: var(--color-2);
 }
 
 ul{
@@ -30,9 +40,14 @@ ul{
 }
 
 .main-hero{
+  max-width: 320px;
   padding: 1rem;
   gap: .5rem;
   text-align: center;
+}
+
+.main-hero img{
+  width: 260px;
 }
 
 .main-hero p{
@@ -42,33 +57,47 @@ ul{
 }
 .main-hero span{
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Playfair Display", serif;
+  color: var(--color-4);
 }
 .info-hero{
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .info-hero li{
   width: 100%;
   font-size: 14px;
   text-align: center;
   padding: .125rem 1rem;
-  background-color: #d6d6d6;
+  background-color: var(--color-5);
   border-radius: 20px;
   margin-bottom: 5px;
+  box-shadow: 2px 2px 4px 0 rgba(145, 105, 45, .3);
 }
 .info-hero li span{
   font-weight: 500;
 }
 
 /* flores margaridas */
+
+.container-img .w200{
+  width: 200px;
+}
+.container-img .w150{
+  width: 150px;
+}
+.container-img .w100{
+  width: 100px;
+}
+
 [data-flor]{
   position: fixed;
   z-index: -1;
 }
 [data-flor= '1']{
-  top: -50px;
+  top: -80px;
   left: -50px;
+  width: 200px;
 }
 [data-flor= '2']{
   bottom: 0;
@@ -83,9 +112,3 @@ ul{
   right: -30px;
 }
 
-.container-img .w150{
-  width: 150px;
-}
-.container-img .w100{
-  width: 100px;
-}
