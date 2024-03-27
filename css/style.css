@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Poppins", sans-serif;
   color: var(--color-2);
@@ -24,6 +28,12 @@ body{
 
 ul{
   list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-2);
+
 }
 
 .hero{
@@ -40,7 +50,7 @@ ul{
 .main-hero{
   max-width: 320px;
   padding: 1rem;
-  gap: .5rem;
+  gap: .375rem;
   text-align: center;
 }
 
@@ -49,12 +59,13 @@ ul{
 }
 
 .main-hero p{
+  font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.375;
   /* width: 200px; */
 }
 .main-hero span{
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
   font-family: "Playfair Display", serif;
   color: var(--color-4);
@@ -66,10 +77,10 @@ ul{
   width: 100%;
   font-size: 14px;
   text-align: center;
-  padding: .125rem 1rem;
+  padding: .125rem 2rem;
   background-color: var(--color-5);
   border-radius: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   box-shadow: 2px 2px 4px 0 rgba(145, 105, 45, .3);
 }
 .info-hero li span{
@@ -113,6 +124,26 @@ ul{
 .information {
   padding: 1rem;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contagem-regressiva p{
+ text-align: center;
+ font-size: 18px;
+ margin-bottom: 1rem;
+}
+
+.contagem-regressiva p span{
+  color: var(--color-3);
+ }
+
+.number{
+  font-size: 18px;
+  color: var(--color-3);
+  font-weight: 500;
 }
 
 .mapouter {
@@ -129,7 +160,6 @@ ul{
   height: 300px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px 0 rgba(145, 105, 45, .3);
-  border: 1px solid var(--color-3);
 }
 
 .gmap_iframe {
