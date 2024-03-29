@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 html{
@@ -189,6 +190,7 @@ a{
   border-radius: 20px;
   padding: .5rem 1rem;
   box-shadow: 2px 2px 4px 0 rgba(145, 105, 45, .3);
+  text-transform: uppercase;
 
   animation: border 2s ease infinite alternate;
 }
